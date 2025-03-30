@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title> <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <style>
     .navbar {
@@ -17,29 +18,122 @@
     .navbar-brand:hover {
         color: #fff;
     }
+    .navbar-toggler {
+        background-color: #ffeae0;
+    } 
+    .carousel-item img {
+        width: 100vw;
+        height: 1111px;
+    }
+    #border {
+        border-radius: 10px;
+        height: 350px;
+    }
+    #sobre {
+        background-color: #ffeae0;
+    }
 </style>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top">
+    <header class="navbar navbar-expand-lg sticky-top" id="header">
         <div class="container">
-            <h1 class="navbar-brand">
+            <h1 class="navbar-brand m-0">
                 Nome do Restaurante
             </h1>
-            <ul class="nav nav-pills">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon">
+                    
+                </span>
+            </button>
+        <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+            <ul class="nav nav-pills d-block d-md-flex">
                 <li class="nav-item"> 
-                    <a href="" class="nav-link active">Sobre o Restaurante</a>
+                    <a href="#sobre" class="nav-link ">
+                        <i class="bi bi-house-door"></i>
+                        Sobre o Restaurante
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Eventos</a>
+                    <a href="" class="nav-link">
+                        <i class="bi bi-calendar-check"></i>
+                        Eventos
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Nosso cardapio</a>
+                    <a href="" class="nav-link">
+                        <i class="bi bi-card-text"></i>
+                        Nosso cardapio
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Fale conosco</a>
+                    <a href="" class="nav-link">
+                        <i class="bi bi-chat-left-text"></i>
+                        Fale conosco
+                    </a>
                 </li>
             </ul>
+        </nav>
+    </div>
+</header>
+<div data-bs-spy="scroll" data-bs-target="header">
+    <section id="sobre">
+        <div class="carousel slide" data-bs-ride="carousel" id="Carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/rets.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/wine.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/food.jpeg" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#Carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#Carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#Carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#Carousel" data-bs-slide-to="2"></button>
+            </div>
         </div>
-    </header>
+        <div class="pt-5 pb-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img id="border" src="./img/rets.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="col-md-7">
+                        <h2> Sobre o restaurante</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste odit tempora. Iusto, a quis? Ducimus eos, laboriosam nesciunt explicabo inventore, placeat fugiat blanditiis nobis, quia facilis in nisi quo!
+                        </p>
+                        <h3>
+                            Sobre o espaco
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos officia, ipsum eius, illo provident blanditiis sint numquam debitis voluptas illum dignissimos cupiditate dicta non velit ad maxime! Libero, accusamus eius.
+                        </p>
+                        <ul>
+                            <li>
+                                item 1
+                            </li>
+                            <li>
+                                item 2
+                            </li>
+                            <li>
+                                item 3
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
