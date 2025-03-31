@@ -10,11 +10,11 @@
     .navbar {
         background-color: #e15f41;
     }
-    .nav .nav-link.active {
+    #header .nav .nav-link.active {
         background-color: #fff;
         color: #e15f41;
     }
-    .nav .nav-link, .navbar-brand,
+    #header .nav .nav-link, .navbar-brand,
     .navbar-brand:hover {
         color: #fff;
     }
@@ -30,6 +30,28 @@
         height: 350px;
     }
     #sobre {
+        background-color: #ffeae0;
+    }
+    .col-md-4 img {
+        height: 277px;
+    }
+    .text-colored {
+        color: #f5795efd;
+    }
+    .nav-cardapio .nav-link.active {
+        background-color: #e15f41;
+        color: #fff;
+    }
+    .nav-cardapio .nav-link.active:hover {
+        color: #fff;
+    }
+    .nav-cardapio .nav-link:hover {
+        color: #e15f41;
+    }
+    .col-md-10 img {
+        height: 270px;
+    }
+    #cardapio {
         background-color: #ffeae0;
     }
 </style>
@@ -53,13 +75,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="#Eventos" class="nav-link">
                         <i class="bi bi-calendar-check"></i>
                         Eventos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="#cardapio" class="nav-link">
                         <i class="bi bi-card-text"></i>
                         Nosso cardapio
                     </a>
@@ -74,7 +96,7 @@
         </nav>
     </div>
 </header>
-<div data-bs-spy="scroll" data-bs-target="header">
+<div data-bs-spy="scroll" data-bs-target="#header">
     <section id="sobre">
         <div class="carousel slide" data-bs-ride="carousel" id="Carousel">
             <div class="carousel-inner">
@@ -128,6 +150,228 @@
                                 item 3
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Eventos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center ">
+                    Para todas as ocasioes
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="./img/birthday.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title">
+                        Aniversarios
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque, quis necessitatibus animi laborum ipsa nemo. Vitae nesciunt quia a et reiciendis corporis quisquam corrupti distinctio dignissimos assumenda, sit ratione?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/casa.webp" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title">
+                        Recepcao para casamentos
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque, quis necessitatibus animi laborum ipsa nemo. Vitae nesciunt quia a et reiciendis corporis quisquam corrupti distinctio dignissimos assumenda, sit ratione?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="./img/confra.jpg" alt="" class="d-block w-100 rounded mb-2">
+                    <h3 class="section-title">
+                        Confraternizacoes
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloremque, quis necessitatibus animi laborum ipsa nemo. Vitae nesciunt quia a et reiciendis corporis quisquam corrupti distinctio dignissimos assumenda, sit ratione?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center mb-5 pt-5">
+                    Nosso <span class="text-colored"></span> cardapio
+                </h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Bebidas" class="text-start nav-link text-colored active ">Bebidas nao alcolicas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Bebidas2"  class="text-start nav-link text-colored">Bebidas alcolicas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Entradas"  class="text-start nav-link text-colored">Entradas</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Pratos"  class="text-start nav-link text-colored">Pratos principais</button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Sobremesas"  class="text-start nav-link text-colored">Sobremesas</button>
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Bebidas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/coca.jpg" alt="">
+                                    <h5 class="mt-2">Coca-Cola</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/Orangejuice.jpg" alt="">
+                                    <h5 class="mt-2">Suco de laranga</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/lemon.webp" alt="">
+                                    <h5 class="mt-2">Suco de lemon</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/pepsi.webp" alt="">
+                                    <h5 class="mt-2">Pepsi</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="Bebidas2">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/beer.webp" alt="">
+                                    <h5 class="mt-2">beer</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/Orangejuice.jpg" alt="">
+                                    <h5 class="mt-2">Suco de laranga</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/lemon.webp" alt="">
+                                    <h5 class="mt-2">Suco de lemon</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/pepsi.webp" alt="">
+                                    <h5 class="mt-2">Pepsi</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="Entradas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/entrada.jpg" alt="">
+                                    <h5 class="mt-2">Entrada</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/Orangejuice.jpg" alt="">
+                                    <h5 class="mt-2">Suco de laranga</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/lemon.webp" alt="">
+                                    <h5 class="mt-2">Suco de lemon</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/pepsi.webp" alt="">
+                                    <h5 class="mt-2">Pepsi</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="Pratos">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/main.jpg" alt="">
+                                    <h5 class="mt-2">Prato principao</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/Orangejuice.jpg" alt="">
+                                    <h5 class="mt-2">Suco de laranga</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/lemon.webp" alt="">
+                                    <h5 class="mt-2">Suco de lemon</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/pepsi.webp" alt="">
+                                    <h5 class="mt-2">Pepsi</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="Sobremesas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/dessert.webp" alt="">
+                                    <h5 class="mt-2">Bolo de chocolate</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/Orangejuice.jpg" alt="">
+                                    <h5 class="mt-2">Suco de laranga</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/lemon.webp" alt="">
+                                    <h5 class="mt-2">Suco de lemon</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100 rounded" src="./img/pepsi.webp" alt="">
+                                    <h5 class="mt-2">Pepsi</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
