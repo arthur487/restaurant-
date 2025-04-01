@@ -54,6 +54,23 @@
     #cardapio {
         background-color: #ffeae0;
     }
+    .social-links li {
+        list-style: none;
+        display: inline;
+    }
+    .social-links a {
+        text-decoration: none;
+    }
+    #fale-conosco button {
+        background-color: #e15f41;
+        color: #fff;
+        margin-top: 10px;
+    }
+    @media (max-width: 767px) {
+        .carousel-item img {
+            height: 280px;
+        }
+    }
 </style>
 <body>
     <header class="navbar navbar-expand-lg sticky-top" id="header">
@@ -87,7 +104,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="#fale-conosco" class="nav-link">
                         <i class="bi bi-chat-left-text"></i>
                         Fale conosco
                     </a>
@@ -128,7 +145,7 @@
                     <div class="col-md-5">
                         <img id="border" src="./img/rets.jpg" class="d-block w-100" alt="">
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 mt-3">
                         <h2> Sobre o restaurante</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iste odit tempora. Iusto, a quis? Ducimus eos, laboriosam nesciunt explicabo inventore, placeat fugiat blanditiis nobis, quia facilis in nisi quo!
@@ -372,6 +389,73 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center"> Fale conosco</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <form>
+                        <div class="mb-3 ">
+                            <label class="form-label fw-bold" for="nome">Seu nome</label>
+                            <input id="nome" type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3 ">
+                            <label class="form-label fw-bold" for="email">Seu e-mail</label>
+                            <input id="email" type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3 ">
+                            <label class="form-label fw-bold" for="telefone">Seu telefone (opicional)</label>
+                            <input id="telefone" type="text" class="form-control">
+                        </div>
+                        <div class="mb-3 ">
+                            <label class="form-label fw-bold" for="mensagem">Sua mensagem</label>
+                            <textarea class="form-control" id="mensagem" required></textarea>
+                            <button class="btn">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes socias
+                        </h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-instagram">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp">
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4">Endereco</h3>
+                        <i class="bi bi-cursor-fill"></i>
+                        <p>
+                            Rua teste exemplo N 145, Bairro Bootstrap - sao paulo - sp
+                        </p>
                     </div>
                 </div>
             </div>
